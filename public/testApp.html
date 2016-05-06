@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="">
+
+
+	<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/angular/angular.js"></script>
+<script src="assets/angular/angular-resource.js"></script>
+
+<script src="assets/js/testApp.js"></script>
+
+
+</head>
+<body>
+
+	<div class="container" ng-controller="mainController">
+		
+
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>name</th>
+					<th>email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="user in users">
+					<td>{{ user.id }}</td>
+					<td>{{ user.name }}</td>
+					<td>{{ user.email }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+
+	
+</body>
+</html>
